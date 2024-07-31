@@ -1,0 +1,30 @@
+{
+  "name": "previewjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./src/styles/styles.css -o ./src/styles/tailwind.css --watch",
+    "build": "npm run build:css",
+    "start": "node ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uteja1/previewJs.git"
+  },
+  "author": "uday",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uteja1/previewJs/issues"
+  },
+  "homepage": "https://github.com/uteja1/previewJs#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
